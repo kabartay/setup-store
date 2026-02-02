@@ -1,0 +1,57 @@
+# ============================================================================
+# MLflow GCP Setup - Git Ignore File
+# ============================================================================
+# This file ensures sensitive files and temporary artifacts are not committed
+# to version control
+# ============================================================================
+
+# Environment variables (contains passwords)
+.env
+
+# Service account keys (contains credentials)
+*.json
+!deployment_logs.json
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Deployment artifacts
+deployment_logs.json
+
+# Docker
+.dockerignore
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backup files
+*.bak
+*.backup
